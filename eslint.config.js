@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import checkFile from "eslint-plugin-check-file";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
@@ -25,6 +26,26 @@ export default tseslint.config(
       ],
       "prefer-arrow-callback": "error",
       "prefer-template": ["error"],
+    },
+  },
+  {
+    files: ["src/**/*"],
+    plugins: {
+      "check-file": checkFile,
+    },
+    rules: {
+      "check-file/filename-naming-convention": [
+        "error",
+        {
+          "**/*.{ts,tsx}": "KEBAB_CASE",
+        },
+      ],
+      "check-file/folder-naming-convention": [
+        "error",
+        {
+          "src/**/": "KEBAB_CASE",
+        },
+      ],
     },
   },
 );
