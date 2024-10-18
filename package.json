@@ -13,6 +13,7 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-slot": "^1.1.0",
+    "@t3-oss/env-core": "^0.11.1",
     "@tanstack/react-router": "^1.70.1",
     "@vitejs/plugin-react": "^4.3.2",
     "class-variance-authority": "^0.7.0",
@@ -22,7 +23,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
