@@ -8,8 +8,8 @@ export const Route = createLazyFileRoute("/")({
 
 function Index() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-red-800 underline">
+    <div className="flex h-screen flex-col items-center justify-center gap-4">
+      <h1 className="font-mono text-3xl font-bold text-red-800 underline">
         Hello world!
       </h1>
       <Button>ss</Button>

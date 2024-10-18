@@ -62,6 +62,7 @@ export default {
       },
       fontFamily: {
         sans: ["Geist", ...fontFamily.sans],
+        mono: ["Geist Mono", ...fontFamily.mono],
       },
       keyframes: {
         "accordion-down": {
