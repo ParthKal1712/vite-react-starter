@@ -7,6 +7,7 @@ export const env = createEnv({
     VITE_KEY: z.string().min(1),
   },
   runtimeEnv: import.meta.env,
+  emptyStringAsUndefined: true,
   onValidationError: (error: ZodError) => {
     console.error(
       "❌ Invalid Client environment variables:",

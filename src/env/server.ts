@@ -3,9 +3,10 @@ import { ZodError, z } from "zod";
 
 export const env = createEnv({
   server: {
-    AUTH_KEY: z.string(),
+    NODE_ENV: z.string().min(1),
   },
   runtimeEnv: import.meta.env, // Called when the schema validation fails.
+  emptyStringAsUndefined: true,
   onValidationError: (error: ZodError) => {
     console.error(
       "❌ Invalid Server environment variables:",
