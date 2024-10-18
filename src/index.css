@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variable Fonts */
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("src/assets/fonts/Geist[wght].ttf") format("woff");
+    font-named-instance: "Regular";
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
