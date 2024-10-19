@@ -1,13 +1,16 @@
-import * as TailwindCssAnimate from "tailwindcss-animate";
+import type { Config } from "tailwindcss";
+import tailwindcss from "tailwindcss";
+import TailwindCssAnimate from "tailwindcss-animate";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  css: { postcss: { plugins: [tailwindcss()] } },
   theme: {
     container: {
-      center: "true",
+      center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
@@ -49,11 +52,11 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
+          "1": "hsl(var(--chart-1))",
+          "2": "hsl(var(--chart-2))",
+          "3": "hsl(var(--chart-3))",
+          "4": "hsl(var(--chart-4))",
+          "5": "hsl(var(--chart-5))",
         },
       },
       borderRadius: {
@@ -90,4 +93,4 @@ export default {
     },
   },
   plugins: [TailwindCssAnimate],
-};
+} satisfies Config;

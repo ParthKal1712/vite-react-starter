@@ -28,29 +28,5 @@
       "@/*": ["./src/*"]
     }
   },
-  // "compilerOptions": {
-
-  //   /* Bundler mode */
-  //   "moduleResolution": "bundler",
-  //   "emitDeclarationOnly": true,
-  //   "noEmit": false,
-  //   "allowImportingTsExtensions": true,
-  //   "isolatedModules": true,
-  //   "moduleDetection": "force",
-  //   "composite": true,
-  //   "jsx": "react-jsx",
-
-  //   /* Linting */
-  //   "strict": true,
-  //   "noUnusedLocals": true,
-  //   "noUnusedParameters": true,
-  //   "noFallthroughCasesInSwitch": true,
-
-  //   "baseUrl": ".",
-  //   "paths": {
-  //     "@/*": ["./src/*"]
-  //   }
-  // },
   "include": ["src"]
-  // "references": [{ "path": "./tsconfig.node.json" }]
 }
